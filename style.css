@@ -1,0 +1,16 @@
+/* register an animatable custom property */
+@property --deg {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 360deg;
+}
+
+.circular-progress {
+  background: conic-gradient(#ff6600 var(--deg), #ddd 0);
+  /* animate the custom property – not `background` */
+  transition: --deg 450ms linear;
+}
+.disable {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

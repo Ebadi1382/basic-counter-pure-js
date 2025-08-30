@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./style.css" rel="stylesheet" />
+    <title>Counter Project</title>
+</head>
+
+<body class="w-full h-full">
+    <main class="w-full min-h-screen flex flex-col justify-start items-center">
+        <form action="#" id="form"
+            class="w-full max-w-[25rem] h-[15rem] flex flex-col items-center justify-center gap-y-5">
+            <input id="inputNum"
+                class="w-full h-[3rem] border rounded-sm px-3 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none outline-none"
+                type="number" placeholder="Please enter your number for timer" />
+            <div class="w-full flex items-center justify-center gap-x-3">
+                <input id="reset" disabled
+                    class="bg-orange-500 text-white hover:bg-black transition-all duration-300 flex-1 py-3 rounded-xl cursor-pointer outline-none disable"
+                    type="button" value="Reset" />
+                <input id="set"
+                    class="bg-orange-500 text-white hover:bg-black transition-all duration-300 flex-1 py-3 rounded-xl cursor-pointer outline-none"
+                    type="button" value="Set To Timer" />
+                <input id="start" disabled
+                    class="bg-orange-500 text-white hover:bg-black transition-all duration-300 flex-1 py-3 rounded-xl cursor-pointer outline-none disable"
+                    type="button" value="Start" />
+                <input id="stop" hidden
+                    class="bg-orange-500 text-white hover:bg-black transition-all duration-300 flex-1 py-3 rounded-xl cursor-pointer outline-none"
+                    type="button" value="Stop" />
+            </div>
+        </form>
+        <div
+            class="w-[12rem] h-[12rem] relative bg-orange-500 rounded-full circular-progress transition-all duration-300">
+            <div id="numberResult"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[11.2rem] h-[11.2rem] flex items-center justify-center rounded-full bg-white">
+                0
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
