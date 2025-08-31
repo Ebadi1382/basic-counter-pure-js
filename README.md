@@ -32,4 +32,4 @@ it might be a nice little practice project for you too.
 ## 🛠️ How to Run
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/basic-counter-pure-js.git
+   git clone https://github.com/Ebadi1382/basic-counter-pure-js.git
